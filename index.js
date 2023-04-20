@@ -1,6 +1,7 @@
 async function move(key,destKey,overwrite,version,ifVersion) {
     const entry = this.getEntry(key,{versions:true});
-    if(!entry || (ifVersion && entry.version!==ifVersion)) return false;
+    if(!entry) throw new Error(`Cannot move ${key} to ${destKey} because ${key} does not exist`);
+    if(ifVersion && entry.version!==ifVersion) return false;
     if(!overwrite && this.get(destKey)!==undefined) throw new Error(`Cannot move ${key} to ${destKey} because ${destKey} already exists`);
     let result;
     await this.transaction(async () => {

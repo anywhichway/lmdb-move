@@ -30,4 +30,6 @@ Extends an LMDB database and any child databases it opens to have the `extension
 
 # Release Notes (Reverse Chronological Order)
 
+2023-04-20 v0.0.2 Now throws if key does not exist to move.
+
 2023-04-19 v0.0.1 Initial public release

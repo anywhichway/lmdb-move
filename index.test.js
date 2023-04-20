@@ -2,7 +2,7 @@ import {open}  from "lmdb";
 import {move,withExtensions} from "./index.js";
 
 const db = withExtensions(open("test",{create:true,useVersions:true}),{move});
-
+db.clearSync();
 test("move",async () => {
     await db.put("hello","world");
     expect(await db.move("hello","goodbye")).toBe(true);
