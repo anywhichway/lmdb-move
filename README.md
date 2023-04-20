@@ -20,9 +20,9 @@ await db.move("key1","key2");
 
 # API
 
-## async move(key,destKey,overwrite,version,ifVersion) - returns boolean
+## async move(key,destKey,?overwrite,?version,?ifVersion) - returns boolean
 
-Moves the value at `key` to `destKey` with the optional `version`. If `overwrite` is `true` and `destKey` already exists, it will be overwritten. Otherwise, an Error is thrown. If `key` does not exist or does not match `ifVersion`, the function returns `false`.
+Moves the value at `key` to `destKey` with the optional `version`. If `overwrite` is `true` and `destKey` already exists, it will be overwritten. Otherwise, an Error is thrown. If `key` does not exist an Error is thrown. If optional `ifVersion` does not match current version, the function returns `false`.
 
 ## withExtensions(db:lmdbDatabase,extenstions:object) - returns lmdbDatabase`
 
