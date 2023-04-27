@@ -13,6 +13,10 @@ async function move(key,destKey,overwrite,version,ifVersion) {
     return result;
 }
 
-import {withExtensions} from "lmdb-extend";
+import {withExtensions as lmdbExtend} from "lmdb-extend";
+
+const withExtensions = (db,extensions={}) => {
+    return lmdbExtend(db,{move,...extensions})
+}
 
 export {move as default,move,withExtensions};
