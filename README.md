@@ -40,6 +40,8 @@ index.js |   66.66 |    57.14 |     100 |     100 | 3-11
 
 # Release Notes (Reverse Chronological Order)
 
+2023-05-02 v0.1.3 Updated license.
+
 2023-04-27 v0.1.2 Simplified use of `withExtensions`.
 
 2023-04-24 v0.1.1 Documentation formatting.
@@ -47,3 +49,9 @@ index.js |   66.66 |    57.14 |     100 |     100 | 3-11
 2023-04-20 v0.1.0 Now throws if key does not exist to move.
 
 2023-04-19 v0.0.1 Initial public release
+
+# License
+
+This software is provided as-is under the [MIT license](http://opensource.org/licenses/MIT).
+
+Copyright (c) 2023, AnyWhichWay, LLC and Simon Y. Blackwell.

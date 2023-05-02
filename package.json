@@ -1,6 +1,6 @@
 {
   "name": "lmdb-move",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Moves one LMDB key value to another, i.e. renames, within the scope of a transaction.",
   "type": "module",
   "main": "index.js",
